@@ -1,0 +1,14 @@
+/* Palette de couleur */
+p{
+    color:#001a4b ;
+    color:#02a0e6;
+    color:#00143d ;
+    color:#febd01;
+}
+
+/* fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Philosopher');
+@import url('https://fonts.googleapis.com/css2?family=Nothing You Could Do');
+@import url('https://fonts.googleapis.com/css2?family=Jura');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans');

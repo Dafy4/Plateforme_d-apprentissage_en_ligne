@@ -1,0 +1,1829 @@
+/* fonts */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Philosopher');
+@import url('https://fonts.googleapis.com/css2?family=Nothing You Could Do');
+@import url('https://fonts.googleapis.com/css2?family=Jura');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans'); */
+/*********************************************************************************************/
+body{
+    margin:0;
+    overflow-x: hidden;
+}
+html {
+    scroll-behavior: smooth;
+}
+/************************* HOME ***************************/
+.accueil2{
+    z-index: -1;
+}
+
+.accueil{
+    display: flex;
+    margin-top: 40px;
+    padding-left: 15%;
+    position: relative;
+}
+.ac{
+    transform: translateX(1px);
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+}
+a{
+    text-decoration: none;
+    color: white;
+    margin-left: 6%;
+}
+a{
+    text-decoration: none;
+    color: white;
+    margin-left: 6%;
+}
+input.recherche{
+    margin-left: 6%;
+    background-color: #008ecf;
+    text-align: right;
+    padding-right: 16px;
+    height: 31px;
+    border-radius: 16px;
+    border: none;
+    outline: none;
+}
+input::placeholder {
+    color: white;
+}
+.recherche input:not(:placeholder-shown) {
+    color: white;
+}
+
+/******************************ADMINISTRATEUR**************************************/
+
+/*Navbar interface administrateur */
+.active{
+    text-shadow: 1px 2px 3px #2f00ffd2;
+    color:#ffffff;
+    /* color: #ffbf00; */
+    /* font-weight: 900; */
+    border-bottom: 2px solid #00143dab;
+    padding: 5px;
+}
+.inactive{
+    color: #00143d;
+}
+.inactive:hover{
+    color:#ffffff;
+    transition: 0.2s;
+}
+
+.fondNavbar{
+    border: 1px solid #02A0E6;
+    background-color: #02A0E6;
+    display: flex;
+    width: 91vw;
+    height: 10vh;
+    justify-content: center;
+    margin: auto;
+}
+
+.navbarAdmin{
+    width: 100%;
+    background-color: #00143dab;
+    padding: 5px;
+    height: 12vh;
+    position: absolute;
+    z-index: 14;
+    position: relative;
+    box-shadow: 11px 8px 9px #dddddd;
+}
+
+.linkAdmin{
+    width: max-content;
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    /* float: right; */
+}
+.linkAdmin a, .linkAdmin input, .linkAdmin button{
+    margin-left: 28px;
+    font-family: 'Fira Sans';
+    font-size: 15px;
+}
+.linkAdmin a{
+    text-decoration: none;
+}
+.linkAdmin input{
+ width: 163px;
+}
+.linkAdmin button{
+    width: 120px;
+}
+.btn_deconnexion_admin{
+    border: #00143d;
+    background-color: #00143d;
+    border-radius: 6px;
+    color: #FFFFFF;
+    padding: 15px;
+    transition: 0.5s;
+}
+.btn_deconnexion_admin:hover{
+    background-color: #febd01;
+    color:#000000;
+    font-weight: 600;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.recherche_admin{
+    border-style: none;
+    border-radius: 6px;
+    height: 36px;
+    padding: 3px;
+    margin: auto;
+}
+.recherche_admin::placeholder{
+    color: #000000;
+    font-size: 10px;
+    text-align: right;
+}
+.image{
+    background-image: url(../css/assets/woman-5462074_1280.jpg);
+    width: 100%;
+    height: 98vh;
+    transform: scaleX(-1);
+}
+div.points1{
+    width: 100px;
+    height: 100px;
+    background-image: url('assets/Points.png');
+    background-size: cover;
+    position: absolute;
+    top: 150px;
+    right: 388px;
+    z-index: 9;
+}
+div.points2{
+    width: 100px;
+    height: 100px;
+    background-image: url(assets/Points2.png);
+    background-size: cover;
+    position: absolute;
+    top: 447px;
+    right: 40px;
+    z-index: 9;
+}
+.rect1{
+    background-color: #00143dbb;
+    width: 44vw;
+    height: 118vh;
+    position: absolute;
+    top: -488px;
+    left: -471px;
+    transform: rotate(-36deg);
+    z-index: 2;
+}
+.rect2{
+    background-color: #02a2e6bb;
+    width: 44vw;
+    height: 118vh;
+    position: absolute;
+    top: -462px;
+    left: -414px;
+    transform: rotate(-36deg);
+    z-index: 1;
+}
+.rect3{
+    background-color: #001a4b;
+    width: 805px;
+    height: 917px;
+    position: absolute;
+    top: 7px;
+    right: -167px;
+    transform: rotate(25deg);
+    z-index: 8;
+}
+.rect4{
+   background-color: #00143d;
+    width: 326px;
+    height: 342px;
+    transform: rotate(25deg);
+    position: absolute;
+    top: 469px;
+    right: 172px;
+    z-index: 8;
+}
+.rect5{
+    background-color: #02a2e685;
+    width: 505px;
+    height: 1109px;
+    transform: rotate(55deg);
+    position: absolute;
+    top: -31px;
+    right: 221px;
+    z-index: 5;
+}
+div.partie2{
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 500px;
+    z-index: 8;
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+}
+div.partie1{
+    z-index: 7;
+    width: 100%;
+}
+div.croix{
+   display: flex;
+}
+
+h1.ODATA{
+    position: absolute;
+    top: 259px;
+    right: 293px;
+    color: #FFFFFF;
+    letter-spacing: 5px;
+    font-family: 'Philosopher';
+    font-size: 43px;
+    transform: rotate(-25deg);
+}
+h2.Connaissance{
+    position: absolute;
+    top: 332px;
+    right: 255px;
+    word-spacing: 11px;
+    line-height: 1.5;
+    font-size: 24px;
+    letter-spacing: 6px;
+    color: #FFFFFF;
+    font-family: 'Nothing You Could Do';
+    transform: rotate(-25deg);
+    display: grid;
+
+}
+span.Connaissance{
+    color: #02a0e6;
+}
+p.titrePart{
+    color: #02a0e6;
+    font-family: 'Philosopher';
+    text-indent: 183px;
+    font-weight: 700;
+    word-spacing: 2px;
+    font-size: 19px;
+}
+p.PhraseAppel{
+    color: #00143d;
+    font-weight: 900;
+    font-size: 34px;
+    text-indent: 117px;
+    position: relative;
+    top: -17px;
+}
+button.Voir_plus{
+    border: #00143d;
+    background-color: #00143d;
+    width: 127px;
+    height: 44px;
+    color: #FFFFFF;
+    border-radius: 3px;
+    position: relative;
+    left: 222px;
+    top: 10px;
+    font-family: 'Jura';
+    letter-spacing: 1px;
+    font-size: 12px;
+    transition: 0.5s;
+}
+button.Voir_plus:hover{
+    border: 1px solid #02a0e6;
+    color: #02a0e6;
+    font-weight: 500;
+    cursor:pointer;
+    font-weight: bolder;
+    background-color: #FFF;
+    transition: 0.5s;
+}button.Voir_plus a:hover{
+    color: #02a0e6;
+}
+/* Affichage des cours récents */
+.coursRecents2{
+    position: relative;
+    left: 17px;
+    top: 49px;
+    line-height: 1.5;
+    width: 194px;
+    padding: 21px;
+    height: 100%;
+    text-align: center;
+    border-radius: 2px;
+    background-color: #FFFFFF;
+    box-shadow: 2px 3px 7px 1px #00000065, 5px -4px 20px 2px #33333314 inset;
+    transition: 0.5s;
+}
+div.contenairCoursRecents{
+    display: flex;
+    align-items: stretch;
+    height: 219px;
+}
+div.contenairCoursRecents a{
+    margin:2px;
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Philosopher';
+}
+div.coursRecents2{
+    flex:1;
+    margin: 20px;
+}
+.coursRecents2 p{
+    font-family: 'Fira Sans';
+    font-size: small;
+    /* overflow-wrap: break-word; */
+    height: 34px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: justify;
+}
+div.descriptionCours2{
+    right: 0px;
+    position: absolute;
+    top: 94px;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    width: 194px;
+    padding: 21px;
+    /* height: 100%; */
+    height: max-content;
+    text-align: center;
+    border-radius: 2px;
+    background-color: #FFFFFF;
+    box-shadow: 2px 3px 7px 1px #00000065, 5px -4px 20px 2px #33333314 inset;
+    transition: 0.5s;
+    z-index: 3;
+    display: none;
+    /* background-color: #eeeeee; */
+    font-family: 'Fira Sans';
+    font-size: small;
+}
+
+div.footerCoursRecents{
+    position: absolute;
+    bottom: 0px;
+    text-align: start;
+}
+
+div.descriptionsAll:hover div.descriptionCours2{
+    display: block;
+    transition: 0.5s;
+}
+
+.coursRecents2:hover{
+    background-color: #00143d;
+    cursor:pointer;
+    box-shadow: 2px 3px 7px 1px #02a2e6;
+}
+.coursRecents2:hover p{
+    color: #FFFFFF;
+}
+.coursRecents2:hover p.profTitulaire{
+    color: #929292;
+}
+h3.titreCours{
+    letter-spacing: 2px;
+    font-family: Philosopher ;
+    overflow-wrap: break-word;
+}
+p.profTitulaire{
+    color: #929292;
+    font-weight: bolder;
+    position: relative;
+    bottom: -22px;
+}
+p.category{
+    position: relative;
+    top: 25px;
+    font-weight: bolder;
+    color: #000000;
+}
+div.partie3{
+    width: 100%;
+    height: 564px;
+    position: relative;
+    top: 502px;
+    background-color: #02a2e62a;
+    display: flex;
+}
+div.imagePart3{
+    background-image: url(../css/assets/vue-face-adolescente-smiley-ecouteurs-au-cours-ecole-ligne.jpg);
+    background-size: cover;
+    width: 375px;
+    height: 492px;
+    position: relative;
+    top:13px;
+    left:25px;
+}
+div.cadreImg{
+    border: 1px solid #9292929a;
+    width: 423px;
+    height: 521px;
+    position: relative;
+    left: 100px;
+    top: 25px;
+}
+div.directivesAdmin{
+    position: relative;
+    left: 145px;
+}
+div.directivesAdmin h3.titre{
+    color: #02a0e6;
+    font-family: 'Philosopher';
+    font-weight: 700;
+    word-spacing: 2px;
+    font-size: 19px;
+}
+div.fleche{
+    background-image: url('../css/assets/icons8-flèche-droite-50.png');
+    background-size: cover;
+    width: 39px;
+    height: 40px;
+    position: absolute;
+    margin-top: -42px;
+}
+div.cadreFleche{
+    background-color: #00143d;
+    width: 42px;
+    height: 43px;
+    margin-top: 36px;
+}
+div.allFleche{
+    margin-top: 64px;
+}
+div.directs{
+    position: relative;
+    top: -203px;
+    right: -10px;
+    line-height: 3.5;
+    font-family: 'Fira Sans';
+    font-size: 14px;
+}
+
+/* p#direct1{
+    line-height: 0.5;
+}
+p#direct2{
+    line-height: 2;
+    margin-top: 48px;
+}
+p#direct3{
+    line-height: 6;
+}
+p#direct4{
+    line-height: 2;
+    margin-top: -9px;
+} */
+/************/
+a#direct1{
+    color: #000000;
+}
+a#direct2{
+    position: relative;
+    top: 15px;
+    color: #000000;
+}
+a#direct3{
+    position: relative;
+    top: -17px;
+    color: #000000;
+}
+a#direct4{
+    position: relative;
+    top: -4px;
+    color: #000000;
+    padding: 20px;
+}
+
+a#direct1:hover, a#direct2:hover, a#direct3:hover, a#direct4:hover{
+    transition: 0.5s;
+    color : #00143d ;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/************/
+div.partie4{
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 521px;
+    position: relative;
+    top:500px;
+}
+div.partie4 h3{
+    letter-spacing: 2px;
+    font-family: Philosopher ;
+}
+p.presentation{
+    color: #00143d;
+    font-weight: 900;
+    font-size: 34px;
+    text-indent: 276px;
+}
+div.imgProf{
+    background-image: url(assets/souriante-jeune-enseignante-debout-devant-tableau-noir-tenant-echoue-pour-conseil-montrant-pouce-vers-haut-dans-salle-classe.jpg);
+    background-size: contain;
+    background-repeat: space;
+    width: 334px;
+    height: 322px;
+    border-radius: 11px;
+    margin-left: 100px;
+}
+div.imgProfS > a{
+    display: none;
+    position: absolute;
+    top: 312px;
+    left: 133px;
+    color: #FFF;
+}
+
+div.imgProfS:hover a{
+    display: block;
+    cursor: pointer;
+}
+
+div.imgProfS{
+    width: 334px;
+    height: 322px;
+    transition: 0.5s;
+}
+div.imgProfS > a > button{
+    background-color: #000000a1;
+    border: 1px solid #7e7e7e;
+    color: #7e7e7e;
+    width: 105px;
+    height: 32px;
+    border-radius: 14px;
+    color: #ffb300;
+    font-weight: bolder;
+}
+div.imgProfS > a > button:hover{
+    background-color: #FFF;
+    cursor: pointer;
+    color: #02a0e6;
+}
+footer{
+    width: 100%;
+    height:50px;
+    background-color: #001a4b;
+    position: fixed;
+    bottom: 0px;
+}
+footer .footer{
+    color: #FFF;
+    font-family: 'Philosopher';
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    letter-spacing: 4px;
+    font-weight: lighter;
+}
+
+/************************AJOUT DEPARTEMENT ADMIN******************************************/
+form#add_dep label{
+    font-family: 'Philosopher';
+    color: #00143d;
+}
+form#add_dep{
+    display: flex;
+    margin: 20px;
+    padding: 5px;
+    justify-content: center;
+    flex-direction: column;
+}
+form#add_dep button{
+    padding: 6px;
+    background-color: #00143d;
+    border: 1px solid #00143d;
+    color: #fff;
+    margin-top: 5px;
+}
+form#add_dep button:hover{
+    transition: 0.5s;
+    background-color: #febd01;
+    border:  1px solid #febd01;
+    color: #00143d;
+    cursor: pointer;
+}
+form#add_dep input{
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 5px;
+}
+form#add_dep input:focus{
+    transition: 0.7s;
+    border: 1px solid #02a0e6;
+    outline: none;
+}
+table#info_dep{
+    width: 100%;
+    text-align: center;
+    border-collapse:collapse;
+    margin-top: 30px;
+}
+table#info_dep button{
+    padding: 5px;
+    width: 50%;
+    margin:5px;
+}
+table#info_dep td#btn_dep{
+    display: flex;
+    justify-content: center;
+}
+
+table#info_dep td#btn_dep button#consult_dep{
+    color:#fff;
+    background-color: #001a4b;
+    border:1px solid #001a4b;
+    /* padding: 5px; */
+    border-radius: 3px;
+}
+table#info_dep td#btn_dep button#suppr_dep{
+    color:#001a4b;
+    background-color: #febd01;
+    border:1px solid #febd01;
+    /* padding: 5px; */
+    border-radius: 3px;
+}
+table#info_dep td#btn_dep button#consult_dep:hover{
+    transition: 0.5s;
+    color:#001a4b;
+    background-color:  #fff;
+    border: 1px solid #001a4b;
+    cursor: pointer;
+    text-shadow: 2px 2px 2px #b1b1b1;
+}
+table#info_dep td#btn_dep button#suppr_dep:hover{
+    transition: 0.5s;
+    color:#febd01;
+    background-color:  #fff;
+    border:1px solid #febd01;
+    cursor: pointer;
+    text-shadow: 2px 2px 2px #fff0f0;
+}
+td#btn_dep a{
+    text-decoration: none;
+    width: 100%;
+    margin: 0;
+}
+h4#titre_dep{
+    text-align: center;
+    color:#001a4b;
+}
+table#table_infos_dep{
+    width:100%;
+    text-align-last: left;
+}
+table#table_infos_dep, table#table_infos_dep tr, table#table_infos_dep td, table#table_infos_dep th {
+    border-bottom: 1px solid #ddd;
+    border-collapse: collapse;
+}
+table#table_infos_dep th{
+    background-color: #00143d;
+    color: #fff;
+    text-align: center;
+}
+div#cours_dep_2 button{
+    padding: 21px;
+    border: 1px solid #febd01;
+    background-color: #febd01;
+    color: #00143d;
+    border-radius: 5px;
+    font-weight: bold;
+}
+div#cours_dep_2{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+div#cours_dep_2 button:hover{
+    transition: 1s;
+    color: #fff;
+    font-size: 12px;
+    background-color: #00143d;
+    border: 2px solid #00143d;
+    cursor: pointer;
+}
+/**************************GESTION DE COMPTE UTILISATEUR - ADMINISTRATEUR***********************************/
+div.partie2_compteUt{
+    position: relative;
+    top: 10px;
+}
+
+div.partie2_compteUt > table{
+    width: 100%;
+    margin-top: 48px;
+}
+
+div.partie2_compteUt > h3{
+    font-family: 'Philosopher';
+    color: #00143d;
+}
+
+div.partie2_compteUt  th, div.partie2_compteUt td{
+    border-bottom: 1px solid #ddd;
+}
+
+div.statistiquesCompte{
+    /* border:1px solid #ddd; */
+    width:90%;
+    height:100px;
+    background-color: #FFF;
+    margin: auto;
+}
+div.NonApprouve, div.approuver, div.nbrEt, div.nbrProf, div.nbrAdmin{
+    border-right: 1px solid #ddd;
+    height: 100px;
+    width: 15%;
+    text-align: center;
+    flex: 1;
+}
+div.statistiquesCompte{
+     display: flex;
+     margin-bottom: 50px;
+     margin-top: 50px;
+     box-shadow: 1px 1px 13px 1px #ddd;
+}
+p.infosStat{
+    display: grid;
+    padding: 11px;
+    height: 60px;
+    color: #787878;
+    align-items: end;
+    font-family: 'Fira Sans';
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+p.infosStat span{
+    color: #02a0e6;
+    height: 58px;
+    font-size: 45px;
+}
+
+/********** COURS - INTERFACE ADMINISTRATEUR*************/
+p.profTitulaireCours{
+    color: #727171;
+    text-align: center;
+    font-family: 'Philosopher';
+    position: relative;
+    bottom: -22px;
+}
+p.categoryCours {
+    font-family: 'Philosopher';
+    font-weight: 600;
+    font-size: 15px;
+    text-align: center;
+    position: relative;
+    bottom: -18px;
+}
+h2.titreCours{
+    font-size: 20px;
+    overflow-wrap: break-word;
+}
+/*********************INFORMATION UTILISATEUR - INTERFACE ADMINISTRATEUR******************************/
+div.navigation{
+    position: relative;
+    top: 10px;
+    text-align: center;
+    margin: auto;
+    border: 1px solid #ddd;
+    width: 700px;
+    height: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+div.navigation > a {
+    color: #000000;
+}
+
+/***************Animation de texte en vague************************/
+
+div.titre{
+    position: relative;
+}
+div.titre h2{
+    position: absolute;
+    transform: translate(29%,-51%);
+}
+div.titre h2:nth-child(1){
+    color: transparent;
+    -webkit-text-stroke: 1px #03a9f4;
+    font-size: 3em;
+}
+div.titre h2:nth-child(2){
+    color:#03a9f4;
+    -webkit-text-stroke: 1px #03a9f4;
+    font-size: 3em;
+    animation: animate 2s ease-in-out infinite;
+}
+@keyframes animate{
+    0%,100%{
+        clip-path: polygon(0% 45%, 15% 44%,32% 50%,54% 60%,70% 61%,84% 59%,100% 52%,100% 100%,0% 100%);
+    }
+    50%{
+        clip-path: polygon(0% 60%,16% 65%,34% 66%, 51% 62%,67% 50%,84% 45%, 100% 46%,100% 100%,0% 100% );
+    }
+}
+/*************************************************************************/
+div.infoEtudiants{
+    /* display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    height: 400px;
+    width: 100%; */
+    /* flex-wrap: wrap; */
+    position: relative;
+    top: 100px;
+    bottom: 100px;
+    margin-bottom: 100px;
+    margin-left: 100px ;
+    margin-right:100px ;
+    height: 360px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /*4 éléments par ligne*/
+    grid-gap: 20px; /* Espacement entre les éléments */
+}
+div.infoEtudiantsContenus{
+    flex: 1;
+    text-align: start;
+    padding: 13px;
+    margin: 10px;
+    overflow-x: auto;
+    overflow-y: auto;
+    box-shadow: #ddd 5px 5px 10px;
+    border: 1px solid #ddd;
+    float: left;
+    box-sizing: border-box;
+}
+div.infoEtudiantsContenus > .option{
+    width: 100%;
+    height: 46%;
+    margin-top: 10px;
+    float: right;
+    background-color: #008ecfdb;
+    transition: 2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.modifType{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.modifType > a{
+    padding: 5px;
+    transition: 0.5s;
+}
+.modifType > div > p{
+    margin-top: -1px;
+    padding-left: 3px;
+    padding-right: 3px;
+    color: white;
+    transition: 0.5s;
+}
+.etudientDep > div{
+    display: none;
+}
+.modifType > a:hover{
+    background-color: #006992;
+}
+.modifType > div > p:hover{
+    background-color: #006992;
+}
+.etudientDep:hover div{
+    display: flex;
+    flex-direction: column;
+}
+div.infoEtudiantsContenus > p{
+    text-overflow: ellipsis;
+}
+.depp{
+    display: flex;flex-direction: column;
+}
+.depp > a:hover{
+    background-color: #006992;
+}
+/* Pour les navigateurs basés sur WebKit (comme Chrome, Safari, etc.) */
+/* Personnalisation de la barre de défilement verticale */
+::-webkit-scrollbar {
+    padding: 7px;
+    width: 6px; /* Largeur de la barre de défilement */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #02a0e6; /* Couleur de la poignée (thumb) */
+    border-radius: 10px; /* Bord arrondi de la poignée */
+}
+
+/*Scrollbar horizental*/
+::-webkit-scrollbar-horizontal {
+    height: 12px; /* Hauteur de la barre */
+  }
+/* div.profilePicture{
+    margin: auto;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    box-shadow: #ddd -5px 2px 2px;
+} */
+img.profilePicture{
+    margin: auto;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    box-shadow: #ddd -5px 2px 2px;
+}
+span.infoUserSpan{
+    color: #ddd;
+    font-family: 'Fira Sans';
+    font-family: 'Fira Sans';
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+div.infoProfeseurs{
+    /* display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    height: 400px;
+    width: 905px;
+    float: left; */
+    position: relative;
+    top: 100px;
+    bottom: 100px;
+    margin-left: 100px ;
+    margin-right:100px ;
+    height: 430px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 éléments par ligne */
+    grid-gap: 20px; /* Espacement entre les éléments */
+}
+.progress {
+    width: 100%;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .progress-bar {
+    width: 0;
+    height: 20px;
+    background-color: #3498db;
+    transition: width 0.5s ease-in-out; /* Transition pour l'animation */
+  }
+
+/*********************************RESULTAT***********************************/
+
+  /************************DROP DOWN MENU FILTER*******************/
+table#tableResultat{
+    width: 100%;
+    text-align: center;
+    border-collapse:collapse;
+    margin-top: 30px;
+}
+table#tableResultat th,tr{
+    border-bottom: 1px solid #ddd;
+}
+table#tableResultat th,td{
+    padding: 10px;
+}
+table#tableResultat td.note{
+    color : #FF0006;
+}
+table#tableResultat td.noteBien{
+    color: #0BFF00;
+}
+div.dropdownContent{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+div.dropdownContent a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+div.dropdownMenu{
+    position: relative;
+    display: inline-block;
+}
+div.dropdownMenu{
+    position: relative;
+    display: inline-block;
+}
+th.dropBtn:hover div{
+    display: block;
+}
+th.dropBtn:hover{
+    color: #02a0e6;
+    cursor: pointer;
+}
+div.dropdownContent a:hover {
+    background-color: #f1f1f1
+}
+
+/******************************************************************************************************/
+/****************************INTERFACE ETUDIANT*****************/
+/* .navbar{
+    display: flex;
+    width: 100%;
+    height: 70px;
+    background-color: #fffffff6;
+} */
+
+.navbarEtudiant{
+    display: flex;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(0, 0, 71);
+    font-family: 'Jura';
+}
+.navbar *{
+    margin:8px
+}
+.activeEtudiant{
+    color:#FFBD00;
+    text-shadow: 1px 2px 3px #008cffd2;
+    border-bottom: 3px solid #febd01;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 17px;
+}
+.btn_deconnexion_etudiant{
+    border: 1px solid #febd01;
+    background-color: #00143d;
+    border-radius: 6px;
+    color: #febd01;
+    padding: 15px;
+    /* transition: 0.5s; */
+    margin-right: 25px;
+    font-weight: 600;
+}
+.btn_deconnexion_etudiant:hover{
+    background-color: #febd01;
+    color:#000000;
+    font-weight: 600;
+    transition: 0.5s;
+    cursor: pointer;
+}
+/* .link{
+    position: absolute;
+    right: 0%;
+} */
+/* .link *{
+    color: white;
+} */
+.linkEt{
+    position: absolute;
+    right: 90px;
+    top: 6px;
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+}
+.linkEt a{
+    margin-right: 25px;
+    font-weight: bold;
+}
+.linkEt a:hover{
+    transition:0.2s;
+    text-shadow: 1px 3px 3px #2f00ffd2;
+    color:#ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 2px solid #ffffff;
+}
+div.teteEt h1{
+    position: absolute;
+    color: #fff;
+    margin-left: 162px;
+    margin-top: 101px;
+    -webkit-text-stroke: 1px #03a9f4;
+    color:#00071a;
+    font-size: 40px;
+}
+span#logo{
+    background-image: url('assets/Logo_OPDT.png');
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    position: absolute;
+    top: -25px;
+}
+div.teteEt{
+    width: 100%;
+    height: 300px;
+    background-color: #00071a;
+}
+.navbar input{
+    margin-left: 40px;
+    height: 35px;
+    border-radius: 17px;
+    border: none;
+}
+h2.IntroEtAcc{
+    color:#00143d !important;
+    font-family: 'Philosopher';
+}
+p#depEt{
+    color: #03a9f4;
+    position: relative;
+    right: 410px;
+    width: 78px;
+    font-weight: bold;
+    font-style: oblique;
+    text-overflow: 2px 2px 2px #02a0e6;
+    text-shadow: 2px 2px 2px #02a0e6;
+}
+p#progessEt{
+    color:#febd01;
+}
+h3#CatégorieCoursEt{
+    color: #000000;
+    text-align: center;
+    font-size: smaller;
+}
+
+#EtCours{
+    display: list-item;
+    position: relative;
+    left: 150px;
+    text-align: justify;
+}
+p#AucunCoursTermine{
+    color:#001a4b;
+    font-family: 'Philosopher';
+    text-align: center;
+}
+div.ProfilEt1{
+    position: relative;
+    left:20px;
+}
+div#cardLecon
+{
+    position: relative;
+    left:100px;
+}
+/**********************************************PROFIL ETUDIANT**********************************/
+img#imageProfil{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+div.CollectET{
+    display: flex;
+    justify-content: center;
+}
+div.Noms{
+    margin-top: 30px;
+}
+div.Noms p span{
+    font-style: italic;
+    font-weight: bold;
+}
+div.Noms p{
+    font-family: 'Philosopher';
+}
+button#btnChangePicture{
+    border: 1px solid #02a0e6 ;
+    background-color: #02a0e6;
+    color:#fff; 
+    padding: 20px;
+    border-radius: 5px;
+}
+button#btnChangePicture:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    border: 1px solid #02a0e6 ;
+    background-color: #fff;
+    color:#02a0e6; 
+}
+div.PhotoProfilProf{
+    display: block;
+}
+div.ProfilProf p span{
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Philosopher';
+}
+div.containerProfilProf{
+    display: flex;
+    justify-content: center;
+}
+button.btn_deconnexion_professeur{
+    border: 1px solid #febd01 !important ;
+    color:#febd01;
+    background-color: #001a4b !important;
+    padding: 12px;
+    border-radius: 5px;
+}
+button.btn_deconnexion_professeur:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    border: 1px solid #febd01  !important;
+    color:#FFF  !important;
+    background-color: #febd01  !important;
+}
+/******************* LOGIN *********************/
+h3{
+    color: #00a3e6;
+    text-align: center;
+}
+div.boutton{
+    margin-top: -43px !important;
+}
+div.forgotPassword{
+    margin-top: 3px !important;
+}
+div.container{
+    position: absolute;
+    z-index: 10;
+}
+.login{
+    display: flex;
+    position: relative;
+}
+.formulaire{
+    padding-left: 50px;
+    margin-right: 10%;
+    margin-left: auto;
+    border: 5px solid #00a3e6;
+    width: 24vw;
+    text-align: center;
+    height: 65vh;
+    display: block;
+    border-radius: 20px;
+    color: white;
+}
+.formulaire div{
+    margin-top: 77px;
+}
+.formulaire input{
+    background-color: #ffffff00;
+    border: none;
+    outline: none;
+    color: white;
+    border-bottom: 3px solid #00a3e6;
+}
+.formulaire input::placeholder {
+    color: white;
+}
+label{
+    padding-right: 20px;
+}
+.btn{
+    margin-top: 63px;
+    margin-left: 32%;
+    color:white;
+    border-radius: 25px;
+    height: 32px;
+    background-color: #00a3e6;
+    outline: none;
+    border: none;
+}
+.gauche{
+    width: 24vw;
+    height: 24vw;
+    border-radius: 11%;
+    transform: rotate(45deg);
+    position: absolute;
+    left: 5%;
+    bottom: 14%;
+    background-color: #EDE7F6;
+    box-shadow: 20px -19px 0px 11px #00a3e6;
+}
+/* *********************list users*********************** */
+.listUser, .listUser td{
+    border-collapse: collapse;
+}
+.listUser{
+    margin: auto;
+    text-align: center;
+}
+.listUser .list{
+    box-shadow: inset 0px 3px 5px 0px #8d8d8d;
+
+}
+.listUser a{
+    margin-left: 0;
+}
+.listUser a>div{
+    background-color: #00143d;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Jura';
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+/* **********************Seection******************** */
+.select-style {
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    width: 120px;
+    border-radius: 3px;
+    overflow: hidden;
+    background-color: #fff;
+    background: #fff;
+    position: relative;
+}
+
+.select-style select {
+    padding: 5px 8px;
+    width: 130%;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.select-style:after {
+    top: 50%;
+    left: 85%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(0, 0, 0, 0);
+    border-top-color: #000000;
+    border-width: 5px;
+    margin-top: -2px;
+    z-index: 100;
+}
+
+.select-style select:focus {
+    outline: none;
+}
+/* ****************creation matiere****************** */
+.creationM{
+    box-shadow: 0px 0px 4px 3px #8d8d8d;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 20px;
+}
+.creationM a{
+    color: #001a4b;
+    font-size: 13px;
+}
+.creationM input{
+    margin-bottom: 20px;
+    padding: 12px;
+    outline: none;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.creationM input::placeholder{
+    color: #b6b6b6;
+}
+.creationM select{
+    margin-bottom: 20px;
+    padding: 12px;
+    width: 250px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.creationM textarea{
+    margin-bottom: 20px;
+    padding: 12px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.creationM .description{
+    text-align: center;
+}
+.creationM button{
+    border: 2.5px solid #001a4b;
+    color: #001a4b;
+    background-color: white;
+    border-radius: 7px;
+    width: 180px;
+    height: 40px;
+    margin-left: 36%;
+}
+.creationM button:hover{
+    box-shadow: 0px 0px 6px 1px #001a4b;
+}
+/* categorie*/
+.categorie td{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+/* message */
+.message{
+    color: #3b3b3b;
+    border: 2px solid #3b3b3b;
+    background-color: #3b3b3b30;
+    text-align: center;
+    max-width: 600px;
+    padding: 10px;
+    border-radius: 10px;
+    animation-name: disparition;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+@keyframes disparition {
+    0% {opacity: 1;}
+    75% {opacity: 1;}
+    100% {opacity: 0;display: none;}
+}
+.niveau{
+    display: flex;
+
+    text-align: center;
+}
+.niveau > div{
+    width: 100px;
+    /* height: 22px; */
+    margin-right: 1px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 1px solid rgb(0, 0, 71);
+    color: rgb(0, 0, 71);
+}
+.niveau > div:hover{
+    background-color: rgb(0, 0, 71);
+
+}
+.niveau > div > a{
+    color: #0086bb;
+}
+.niveau .active{
+    background-color: rgb(0, 0, 71);
+    /* color: white; */
+}
+/*"""""""""""""""""""" chargement """"""""""""""""""""""*/
+.loader {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    color: #514b82;
+    background-image:
+  linear-gradient(to right, currentColor 0%, currentColor 0%) right / 51% 100%,
+  linear-gradient(to bottom, currentColor 0%, currentColor 0%) bottom / 100% 51%;
+    background-repeat: no-repeat;
+    animation: l17-0 2s infinite linear .25s;
+  }
+  .loader::before{
+    content:"";
+    width: 50%;
+    height: 50%;
+    background: currentColor;
+    transform-origin: 10% 10%;
+    animation: l17-1 .5s infinite linear;
+  }
+  @keyframes l17-0 {
+    0%   ,12.49% {transform: rotate(0deg)}
+    12.5%,37.49% {transform: rotate(90deg)}
+    37.5%,62.49% {transform: rotate(180deg)}
+    62.5%,87.49% {transform: rotate(270deg)}
+    87.5%,100%   {transform: rotate(360deg)}
+  }
+  @keyframes l17-1 {
+    0%      {transform: perspective(80px) rotate3d(-1,1,0, 0)}
+    80%,100%{transform: perspective(80px) rotate3d(-1,1,0,-360deg)}
+  }
+  .centre{
+    position: sticky;
+    top: 46vh;
+    left: 46vw;
+
+}
+/* chargement 2 */
+/* HTML: <div class="loader"></div> */
+.loaderr {
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 14px;
+    display: inline-grid;
+    overflow: hidden;
+  }
+  .loaderr:before,
+  .loaderr:after {
+    content: "Loading...";
+    grid-area: 1/1;
+    clip-path: inset(0 -200% 50%);
+    text-shadow: -10ch 0 0;
+    animation: l13 2s infinite;
+  }
+  .loaderr:after {
+    clip-path: inset(50% -200% 0%);
+    text-shadow: 10ch 0 0;
+    --s:-1;
+    animation-delay: 1s;
+  }
+  @keyframes l13 {25%,100%{transform: translateX(calc(var(--s,1)*100%));}}
+/* ------------------------------ */
+/* -----------------commentaire----------------- */
+.sidenav {
+    width: 500px;
+    z-index: 1;
+    font-size: 12px;
+    background-color: #f1f1f1;
+    transition: 0.5s;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 6px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-height: 100vh;
+    min-height: 500px;
+}
+
+.sidenav > div > div > div{
+    margin-bottom: 10px;
+}
+.sidenav >div > div> div > div > h4{
+    margin-bottom: 0;
+    background-color: #ccc7c7;;
+    width: max-content;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px 10px 0 0;
+}
+.sidenav >div > div > div > div > p{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 10px;
+    max-width: 86%;
+    min-width: 35px;
+    background-color: #f1f1f1;;
+    width: max-content;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 0 10px 10px 10px;
+    box-shadow: 0px 4px 20px 1px #000000;
+}
+.float{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.border{
+    border-radius: 10px 0 10px 10px !important;
+}
+.send{
+    display: flex;
+    /* position: absolute;
+    bottom: 61px; */
+    width: 510px;
+    padding: 5px;
+    background-color: #ccc7c7;
+    z-index: 1;
+    margin-left: -10px;
+    margin-right: -10px;
+    box-shadow: 0px 1px 20px 0px #001a4b;
+}
+.send textarea{
+    height: 25px;
+    /* width: 80%; */
+    box-shadow: 0px 4px 20px 1px #001a4b;
+    border-radius: 5px;
+
+}
+.send div{
+    cursor: pointer;
+    box-shadow: 0px 4px 20px 1px #001a4b;
+    margin-left: 10px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    padding-top: 8px;
+    border-radius: 10px;
+}
+.sidenav1{
+    background-color: #001a4bb8;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+/* ---------------------------notification----------------------------- */
+.notification{
+    background-color: rgb(255, 138, 138);
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+    width: fit-content;
+    height: fit-content;
+    float: right;
+    font-size: 10px;
+}
+/* """""""""""""matiere""""""""""""" */
+.courrss  .matiere{
+    color:black;
+}
+.cours{
+    text-align: center;
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* position: absolute;
+    z-index: 100; */
+}
+.coursOffline{
+    text-align: center;
+    /* background-color: white; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: absolute;
+    z-index: 100;
+}
+.coursOffline .lecon > div{
+    background-color: #FFF;
+}
+.cours h2,h3{
+    color: #06b3e3;
+    text-align:center;
+}
+.courrss .lecon{
+display: table;
+}
+.courrss .lecon > div{
+    width: 275px;
+    height: 143px;
+    margin: 10px;
+    box-shadow: inset 1px 3px 6px 5px rgb(225 222 222);
+    border-radius: 10px;
+    float: left;
+}
+.courrss .lecon > div >section{
+    width:100%;
+    color:white;
+    position:relative;
+    bottom:-5px;
+    box-shadow: inset 1px 3px 6px 5px rgb(225 222 222);
+    display:none;
+    animation: apparition 0.5s;
+}
+@keyframes apparition {
+    from {transform: translateY(30px);opacity:0;}
+    to {transform: translateY(0);opacity:1;}
+}
+.courrss .lecon > div:hover section{
+    display:block;
+    cursor: pointer;
+}
+.courrss .lecon > div >section >div {
+    float:left;
+    width:50%;
+    height:30px;
+    cursor: pointer;
+}
+.courrss .lecon > div >section >a {
+    float:left;
+    width:50%;
+    height:30px;
+}
+.courrss a.AjoutMatiere{
+    color: #000000;
+}
+.cadenas{
+    position: absolute;
+    top: 33%;
+    left: 39%;
+    opacity: 0.3;
+}
+.cadenas img{
+    width: 50%;
+}
+/* --------------------------style checkbox------------------------- */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 43px;
+    height: 25px;
+  }
+
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ec4b4b;
+    -webkit-transition: .2s;
+    transition: .4s;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  input:checked + .slider {
+    background-color: #1ba12d;
+  }
+
+  input:focus + .slider {
+    box-shadow: 0 0 1px #1ba12d;
+  }
+
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  .minuteur{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    background-color: #2196F3;
+    color: #ffff;
+    box-shadow: 5px 6px 20px 3px #929292;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.minuteur:hover{
+    opacity: 0.3;
+}
+
+/* ------------------------------ */
+.containerr {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .bar1, .bar2, .bar3 {
+    width: 17.5px;
+    height: 2.5px;
+    background-color: #33333378;
+    margin: 3px 0;
+    transition: 0.4s;
+  }
+
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-4.5px, 3px);
+    transform: rotate(-45deg) translate(-4.5px, 3px);
+  }
+
+  .change .bar2 {opacity: 0;}
+
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-4px, -4px);
+    transform: rotate(45deg) translate(-4px, -4px);
+  }
+  .affOption{
+    display: none !important;
+  }
+  .afflist{
+    display: none !important;
+  }
